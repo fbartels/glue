@@ -63,7 +63,6 @@ vendor: .yarninstall
 dist: ; $(info building dist tarball ...)
 	@mkdir -p "dist/"
 	$(YARN) pack --filename="dist/${PACKAGE_NAME}-${VERSION}.tgz"
-	cd dist/ && ln -s ${PACKAGE_NAME}-${VERSION}.tgz ${PACKAGE_NAME}-latest.tgz
 
 .PHONY: changelog
 changelog: ; $(info updating changelog ...)
