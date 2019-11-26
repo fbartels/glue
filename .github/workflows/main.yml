@@ -13,5 +13,5 @@ jobs:
       run: make dist
     - uses: actions/upload-artifact@v1
       with:
-        name: my-artifact
-        path: dist
+        name: build-artifacts
+        path: dist/
